@@ -1,0 +1,12 @@
+<!-- src/app/app.component.html -->
+
+<h1>Posts with Comments</h1>
+
+<div *ngFor="let post of posts">
+  <app-post [post]="post" ></app-post>
+</div>
+
+<!-- <h1>Posts with Comments</h1>
+<div *ngFor="let post of posts">
+  <app-post [post]="post" (addCommentEvent)="onAddComment($event)"></app-post>
+</div> -->
